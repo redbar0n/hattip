@@ -1,0 +1,6 @@
+
+compatibility_date = "2021-11-01"
+main = "dist/cfw.js"
+name = "hattip-htmx"
+usage_model = 'bundled'
+workers_dev = true
