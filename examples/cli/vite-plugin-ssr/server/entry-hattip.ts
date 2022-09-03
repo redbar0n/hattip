@@ -1,14 +1,14 @@
 /// <reference types="vite/client" />
 
+import { createRouter } from "@hattip/router";
 import { renderPage } from "vite-plugin-ssr";
-import { compose, RequestContext } from "@hattip/compose";
 
-export default compose(handler);
+const app = createRouter();
 
-async function handler(ctx: RequestContext) {
+app.use(async (ctx) => {
   const parsedUrl = new URL(ctx.request.url);
   const url = parsedUrl.pathname + parsedUrl.search;
-  const pageContext = await renderPage({ url });
+  const pageContext = await renderPage({ urlOriginal: url });
   const { httpResponse } = pageContext;
 
   if (httpResponse) {
@@ -19,4 +19,6 @@ async function handler(ctx: RequestContext) {
       },
     });
   }
-}
+});
+
+export default app.buildHandler();
