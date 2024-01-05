@@ -35,7 +35,7 @@
     "cookie": "^0.6.0"
   },
   "devDependencies": {
-    "@cyco130/eslint-config": "^3.5.0",
+    "@cyco130/eslint-config": "^3.6.0",
     "@hattip/adapter-test": "workspace:*",
     "@hattip/polyfills": "workspace:*",
     "@hattip/response": "workspace:*",
@@ -44,6 +44,6 @@
     "publint": "^0.2.7",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
-    "vitest": "^1.1.0"
+    "vitest": "^1.1.3"
   }
 }

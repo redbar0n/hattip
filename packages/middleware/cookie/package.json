@@ -37,7 +37,7 @@
     "cookie": "^0.6.0"
   },
   "devDependencies": {
-    "@cyco130/eslint-config": "^3.5.0",
+    "@cyco130/eslint-config": "^3.6.0",
     "@types/node": "^20.10.6",
     "eslint": "^8.56.0",
     "publint": "^0.2.7",
